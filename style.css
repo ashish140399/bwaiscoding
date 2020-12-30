@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .loader{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color:rgb(249,249,249);
+  z-index: 999977;
+}
+.rotae{
+  background: url('logo.png') 50% 50% no-repeat rgb(249,249,249);
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  animation-name: rotateloader ;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  transform: rotate(20deg);
+
+}
+@keyframes rotateloader {
+  0% {transform: rotate(15deg);}
+  5% {transform: rotate(-15deg);}
+  33% {transform: rotate(35deg);}
+  38% {transform: rotate(0deg);}
+  66% {transform: rotate(-20deg);}
+  76% {transform: rotate(30deg);}
+  100% {transform: rotate(-30deg);}
+}
+
+.main_div{
+  height: 100%;
+  color: #000;
+  background-image: url('back3.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+.UMS{
+  font-size: 2.5em;
+  font-weight: 500;
+  font-family: 'Raleway', sans-serif;
+
+}
+.first_box{
+  padding:  2% 5% 4% 5%;
+  color: #fff;
+  border-radius: 5px;
+  background-image:linear-gradient( to left ,#02aab0   ,#00cdac)
+}
+.UMS_info{
+
+}
+.fb_h{
+  font-size: 2em;
+  text-align: center;
+  margin: 2% 0% 3% 0%
+}
+.fas{
+  font-size: 5em;
+  display: inline-block;
+}
+.fb_cd{
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+}
+.fb_colh{
+  font-size:1.7em;
+  font-weight:500;
+}
+.fb_col{
+  margin: 3% 0%;
+}
+.fb_colc{
+  margin: 3% 0% 15% 0%
+}
+.page_headings{
+  font-size: 2em;
+  text-align: center;
+}
+
+.page_headings_r1{
+  font-size: 1.4em;
+  font-weight: 500;
+  margin: 0% 0% 1% 0%;
+  margin-left:-10px;
+  font-family: 'Open Sans', sans-serif;
+}
+.page_headings_r2{
+  font-size: 1.4em;
+  font-weight: 500;
+  margin: 0% 0% 1% 0%;
+  font-family: 'Open Sans', sans-serif;
+}
+.info_col{
+  background-color: #fff;
+  height: 100%;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px
+}
+.info_col_h{
+  font-size: 1.3em;
+  font-weight: 500;
+  background-image:linear-gradient( to left ,#02aab0   ,#00cdac);
+  color:#fff;padding: 0.6em 1em;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px
+}
+.info_col_cnt{
+  padding: 1em 1em 0.6em 1em
+}
+footer{
+  padding: 4% 5%;
+  background-color:#2193b0;
+  color: #fff;
+  margin-top:3%;
+  color: #fff
+}
+.footer_perk{
+  font-size: 2em;margin: 0% 5%
+}
+.footer_list{
+  margin: 2% 4%;font-size: 1.2em
+}
+.footer_mail{
+  font-size: 2em;text-align: center;margin-top: 7%
+}
+.first_detaill:hover div .fas {
+  /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 1s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@media only screen and (max-width: 768px) {
+  .fb_colh{
+    font-size: 1.4em;
+
+  }
+  .fas{
+    font-size: 3.5em;
+  }
+  .footer_perk{
+  font-size: 1.5em;
+  }
+  .footer_list{
+    margin: 2% 4%;font-size: 1em
+  }
+  .footer_mail{
+    font-size: 1.5em;text-align: center;margin-top: 7%
+  }
+}
+
+@media only screen and (max-width: 425px){
+  .fb_cd{
+    border:0px;
+
+  }
+  .first_detaill{
+    margin: 4% 0%;
+  }
+  .landing_page{
+    margin: 0% 8%;
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 7px;
+  }
+  .second_detail{
+    margin: 4% 0%;
+  }
+  .footer_perk{
+  font-size: 1.4em;
+  }
+  .footer_list{
+    margin: 2% 4%;font-size: 1em
+  }
+  .footer_mail{
+    font-size: 1.2em;text-align: center;margin-top: 7%
+  }
+  .UMS{
+    font-size: 2em;
+  }
+  .page_headings{
+    font-size: 1.7em;
+  }
+  .page_headings_r1, .page_headings_r2{
+    font-size: 1.2em;
+
+  }
+
+}
